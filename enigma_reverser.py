@@ -67,7 +67,7 @@ with open(input_file, "r") as input:
                         output.write('\t' + " ".join(line_segments) + '\n')
                         continue
 
-                    line_segments[3] = line_segments[3][:right_parenthesis+1] + class_mapping.get(return_type[1:-1]) + ';'
+                    line_segments[3] = line_segments[3][:right_parenthesis+1] + 'L' + class_mapping.get(return_type[1:-1]) + ';'
                     output.write('\t' + " ".join(line_segments) + '\n')
 
 
