@@ -53,6 +53,7 @@ with open(input_file, "r") as input:
 
 
                 case 'METHOD':
+                    line_segments[1], line_segments[2] = line_segments[2], line_segments[1]
                     right_parenthesis = line_segments[3].find(')')
                     if right_parenthesis > 1: # function requires arguments
                         # This swaps occurrences in the keys of class_mapping for the values of class_mapping
